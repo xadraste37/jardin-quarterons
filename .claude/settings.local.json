@@ -14,7 +14,11 @@
       "Bash(BASE=\"/c/Users/Utilisateur/Documents/4. SANDBOX/jardin-quarterons/quarterons-content/guide des plantes\")",
       "Read(//c/Users/Utilisateur/Documents/4. SANDBOX/jardin-quarterons/**)",
       "Read(//c/Users/Utilisateur/Documents/4. SANDBOX/jardin-quarterons/$BASE/**)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(gh repo:*)",
+      "Bash(where gh:*)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Users/Utilisateur/AppData/Local/Programs/**)"
     ]
   }
 }
