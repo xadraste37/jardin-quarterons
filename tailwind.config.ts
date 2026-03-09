@@ -9,11 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        brand: {
+          blue: "#1B2A3E",
+          gold: "#D4A017",
+        },
+      },
+      fontFamily: {
+        sans: ['Visby Round CF', 'sans-serif'],
+      },
+      borderRadius: {
+        pill: "999px",
       },
     },
   },
   plugins: [],
 };
+
 export default config;

@@ -2,26 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Visby Round CF';
+  src: url('/fonts/VisbyRoundCF-Medium.woff2') format('woff2'),
+       url('/fonts/VisbyRoundCF-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --brand-blue: #1B2A3E;
+  --brand-gold: #D4A017;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+html, body {
+  color: #1B2A3E;
+  background: #ffffff;
+  font-family: 'Visby Round CF', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .btn-gold {
+    @apply bg-brand-gold text-white font-bold py-3 px-8 rounded-pill text-center transition-opacity hover:opacity-90 active:opacity-80;
+  }
+  .btn-blue {
+    @apply bg-brand-blue text-white font-bold py-3 px-8 rounded-pill text-center transition-opacity hover:opacity-90 active:opacity-80;
+  }
+  .circle-img {
+    @apply rounded-full object-cover;
+  }
+  .back-btn {
+    @apply w-10 h-10 rounded-full bg-brand-gold flex items-center justify-center text-white text-xl font-bold cursor-pointer;
   }
 }
