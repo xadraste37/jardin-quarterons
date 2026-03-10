@@ -9,6 +9,8 @@ import DragDropHorn from '@/components/DragDropHorn';
 
 type Screen = 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
+const BASE = 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media';
+
 function QuizOrtie({ onNext }: { onNext: () => void }) {
   const [selected, setSelected] = useState<string | null>(null);
   const OPTIONS = [
@@ -74,7 +76,7 @@ export default function Chapitre1() {
           </h1>
           {/* Photo 1 (landscape) — biodynamie-2 first */}
           <div className="relative w-full rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: '4/3' }}>
-            <Image src="/images/lieux/biodynamie-2.jpg" alt="La biodynamie" fill className="object-cover" />
+            <Image src={`${BASE}/images/lieux/biodynamie-2.jpg`} alt="La biodynamie" fill className="object-cover" />
           </div>
           <p className="text-brand-blue leading-relaxed">
             La biodynamie est une approche globale de l&apos;agriculture qui renforce la vie du sol,
@@ -83,19 +85,19 @@ export default function Chapitre1() {
           </p>
           {/* Photo 2 (landscape) — biodynamie-1 second */}
           <div className="relative w-full rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: '4/3' }}>
-            <Image src="/images/lieux/biodynamie-1.jpg" alt="Vigne en biodynamie" fill className="object-cover" />
+            <Image src={`${BASE}/images/lieux/biodynamie-1.jpg`} alt="Vigne en biodynamie" fill className="object-cover" />
           </div>
           <p className="text-brand-blue leading-relaxed">
             Ecoutez Jeff expliquer comment nous appliquons la préparation T500 au domaine.
           </p>
           <div className="flex items-center justify-center gap-5">
             <div className="relative w-16 h-16 rounded-full overflow-hidden shadow-md shrink-0">
-              <Image src="/images/portraits/jeff.jpg" alt="Jeff" fill className="object-cover" />
+              <Image src={`${BASE}/images/portraits/jeff.jpg`} alt="Jeff" fill className="object-cover" />
             </div>
             <PlayButton
               size="lg"
               label="Écouter Jeff"
-              audioUrl="/audios/temoignage-t500.m4a"
+              audioUrl={`${BASE}/audios/temoignage-t500.m4a`}
             />
           </div>
           <div className="flex flex-col gap-3 mt-4">
@@ -117,7 +119,7 @@ export default function Chapitre1() {
           <p className="text-brand-gold font-semibold text-center">Un puissant activateur biologique</p>
           {/* Landscape photo */}
           <div className="relative w-full rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: '4/3' }}>
-            <Image src="/images/lieux/biodynamie-3.jpg" alt="Préparation T500" fill className="object-cover" />
+            <Image src={`${BASE}/images/lieux/biodynamie-3.jpg`} alt="Préparation T500" fill className="object-cover" />
           </div>
           <p className="text-brand-blue leading-relaxed">
             La préparation T500 est l&apos;une des préparations les plus couramment utilisées en
@@ -163,7 +165,7 @@ export default function Chapitre1() {
           </div>
           {/* Larger circular photo */}
           <div className="relative w-56 h-56 rounded-full overflow-hidden shadow-md">
-            <Image src="/images/lieux/cornes-enterees.jpg" alt="Cornes enterrées" fill className="object-cover" />
+            <Image src={`${BASE}/images/lieux/cornes-enterees.jpg`} alt="Cornes enterrées" fill className="object-cover" />
           </div>
           <p className="text-brand-blue leading-relaxed text-sm">
             Bravo ! Nous la dynamisons pendant 1 heure avant de la pulvériser dans les vignes
@@ -174,7 +176,7 @@ export default function Chapitre1() {
             <PlayButton
               size="lg"
               label="Écouter le témoignage"
-              audioUrl="/audios/temoignage-t500.m4a"
+              audioUrl={`${BASE}/audios/temoignage-t500.m4a`}
             />
           </div>
           <button className="btn-gold w-full" onClick={next(5)}>
@@ -191,7 +193,7 @@ export default function Chapitre1() {
           </h1>
           <div className="relative w-32 h-32 rounded-full overflow-hidden shadow-md">
             <Image
-              src="/images/plantes/ortie.png"
+              src={`${BASE}/images/plantes/ortie.png`}
               alt="Ortie"
               fill
               className="object-cover"
@@ -211,7 +213,7 @@ export default function Chapitre1() {
       {screen === 6 && (
         <div className="flex flex-col items-center gap-6 text-center">
           <div className="relative w-40 h-40 rounded-full overflow-hidden shadow-md">
-            <Image src="/images/portraits/constant.png" alt="Constant" fill className="object-cover" />
+            <Image src={`${BASE}/images/portraits/constant.png`} alt="Constant" fill className="object-cover" />
           </div>
           <h2 className="text-xl font-extrabold text-brand-blue">Constant</h2>
           <p className="text-brand-blue/70 leading-relaxed">
@@ -221,7 +223,7 @@ export default function Chapitre1() {
           <PlayButton
             size="lg"
             label="Écouter Constant"
-            audioUrl="/audios/constant-ortie.mp3"
+            audioUrl={`${BASE}/audios/constant-ortie.mp3`}
           />
           <button className="btn-gold w-full mt-auto" onClick={next(7)}>
             Répondre au QUIZZ

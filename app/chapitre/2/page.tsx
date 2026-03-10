@@ -24,6 +24,8 @@ interface Defi {
   photos: PlantPhoto[];
 }
 
+const BASE = 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media';
+
 const DEFIS: Defi[] = [
   {
     number: 1,
@@ -34,7 +36,7 @@ const DEFIS: Defi[] = [
     hint: 'Je fais de jolies fleurs blanches au cœur jaune, qui sentent bon la pomme.\n\nOn m\'utilise souvent en tisane le soir !',
     answer: 'Bravo ! Je suis bien la camomille matricaire !',
     ctaLabel: 'Je poursuis les défis',
-    photos: [{ src: '/images/plantes/camomille-matricaire.png', label: 'Camomille matricaire' }],
+    photos: [{ src: `${BASE}/images/plantes/camomille-matricaire.png`, label: 'Camomille matricaire' }],
   },
   {
     number: 2,
@@ -46,9 +48,9 @@ const DEFIS: Defi[] = [
     answer: 'Bravo ! L\'Aurone, le Géranium Bourbon et la Sauge Ananas !',
     ctaLabel: 'Je poursuis les défis',
     photos: [
-      { src: '/images/plantes/aurone.png', label: 'Aurone' },
+      { src: `${BASE}/images/plantes/aurone.png`, label: 'Aurone' },
       { src: '', label: 'Géranium Bourbon' },
-      { src: '/images/plantes/sauge.png', label: 'Sauge Ananas' },
+      { src: `${BASE}/images/plantes/sauge.png`, label: 'Sauge Ananas' },
     ],
   },
   {
@@ -61,11 +63,11 @@ const DEFIS: Defi[] = [
     answer: 'Bravo ! La Menthe poivrée, le Gatillier, le Poivrier du Sichuan, l\'Hysope et l\'Herbe à poivre !',
     ctaLabel: 'Je poursuis les défis',
     photos: [
-      { src: '/images/plantes/menthe-poivree.png', label: 'Menthe poivrée' },
-      { src: '/images/plantes/gattilier.png', label: 'Gatillier' },
-      { src: '/images/plantes/poivrier-sichuan.png', label: 'Poivrier du Sichuan' },
-      { src: '/images/plantes/hysope.png', label: 'Hysope' },
-      { src: '/images/plantes/perilla-pourpre.png', label: 'Herbe à poivre' },
+      { src: `${BASE}/images/plantes/menthe-poivree.png`, label: 'Menthe poivrée' },
+      { src: `${BASE}/images/plantes/gattilier.png`, label: 'Gatillier' },
+      { src: `${BASE}/images/plantes/poivrier-sichuan.png`, label: 'Poivrier du Sichuan' },
+      { src: `${BASE}/images/plantes/hysope.png`, label: 'Hysope' },
+      { src: `${BASE}/images/plantes/perilla-pourpre.png`, label: 'Herbe à poivre' },
     ],
   },
   {
@@ -78,8 +80,8 @@ const DEFIS: Defi[] = [
     answer: 'Bravo ! La Menthe poivrée et la Sauge officinale !',
     ctaLabel: 'Je poursuis les défis',
     photos: [
-      { src: '/images/plantes/menthe-poivree.png', label: 'Menthe poivrée' },
-      { src: '/images/plantes/sauge.png', label: 'Sauge officinale' },
+      { src: `${BASE}/images/plantes/menthe-poivree.png`, label: 'Menthe poivrée' },
+      { src: `${BASE}/images/plantes/sauge.png`, label: 'Sauge officinale' },
     ],
   },
   {
@@ -91,7 +93,7 @@ const DEFIS: Defi[] = [
     hint: 'Je suis pas très loin de l\'amphore. 🏺🏺🏺 Ne meurt jamais en Italie...',
     answer: 'Bravissimo ! Je suis l\'immortelle d\'Italie. On m\'utilisait autrefois en cuisine comme épice pour relever les viandes et les poissons. Je suis un ersatz du curry.',
     ctaLabel: 'Je continue',
-    photos: [{ src: '/images/plantes/immortelle-italie.png', label: 'Immortelle d\'Italie' }],
+    photos: [{ src: `${BASE}/images/plantes/immortelle-italie.png`, label: 'Immortelle d\'Italie' }],
   },
 ];
 

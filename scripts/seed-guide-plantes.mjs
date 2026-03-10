@@ -19,8 +19,8 @@ const PLANTS = [
     vertus: "Cette plante médicinale aux multiples vertus a surtout été utilisée comme vermifuge par le passé.\n\nElle est aussi connue pour son usage digestif, notamment sous forme de spiritueux comme la fameuse « absinthe » des artistes.",
     contre_indications: "Sa consommation doit être limitée car elle contient de la thuyone, une substance toxique qui peut avoir des effets neurotoxiques à forte dose.",
     vignes: "C'est une précieuse alliée du jardinier. Elle peut être cultivée au pied des arbres fruitiers pour repousser naturellement les insectes nuisibles.",
-    image_url: '/images/plantes/absinthe.png',
-    audio_url: '/audios/plantes/absinthe.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/absinthe.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/absinthe.mp3',
   },
   {
     ordre: 2,
@@ -33,8 +33,8 @@ const PLANTS = [
     vertus: "Cette plante médicinale aux nombreuses vertus est surtout connue pour ses propriétés cicatrisantes, anti-inflammatoires, coagulantes et hémostatiques qui en font le pansement naturel idéal.",
     contre_indications: "Son usage est contre-indiqué en cas de grossesse et pendant l'allaitement.",
     vignes: "Cette plante aux racines traçantes, très résistante à la sécheresse, forme un manteau végétal protecteur pour les sols mis à nu.",
-    image_url: '/images/plantes/achillee-millefeuille.png',
-    audio_url: '/audios/plantes/achillee-millefeuille.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/achillee-millefeuille.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/achillee-millefeuille.mp3',
   },
   {
     ordre: 3,
@@ -47,7 +47,7 @@ const PLANTS = [
     vertus: "Ces vertus médicinales sont peu connues en France. Elles sont en revanche bien connues des amérindiens qui l'utilisent comme fébrifuge pour lutter contre la fièvre.",
     contre_indications: "En Europe, cette plante d'origine nord-américaine très rustique est souvent utilisée comme simple plante ornementale et mellifère.",
     vignes: null,
-    image_url: '/images/plantes/agastache-fenouil.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/agastache-fenouil.png',
     audio_url: null,
   },
   {
@@ -61,7 +61,7 @@ const PLANTS = [
     vertus: "Ces vertus médicinales sont peu connues en France. Elles sont en revanche bien connues des amérindiens qui l'utilisent comme fébrifuge pour lutter contre la fièvre.",
     contre_indications: "Bien que vivace dans son aire d'origine, elle supporte mal le froid hivernal de nos contrées.",
     vignes: null,
-    image_url: '/images/plantes/agastache-mexicaine.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/agastache-mexicaine.png',
     audio_url: null,
   },
   {
@@ -75,7 +75,7 @@ const PLANTS = [
     vertus: "L'angélique officinale possède d'intéressantes propriétés médicinales. Elle est notamment utilisée pour lutter contre l'asthénie, stimuler la digestion et réguler les troubles digestifs.",
     contre_indications: "La plante peut avoir une action abortive et elle est donc contre-indiquée durant la grossesse.",
     vignes: "C'est une plante bisannuelle qui peut mesurer jusqu'à 2,50 m de haut ! Elle peuple les milieux humides et apprécie les sols riches et légèrement acides.",
-    image_url: '/images/plantes/angelique.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/angelique.png',
     audio_url: null,
   },
   {
@@ -89,7 +89,7 @@ const PLANTS = [
     vertus: "Elle est surnommée « arquebuse » car elle servait historiquement à soigner les blessures causées par l'ancienne arme à feu du même nom.",
     contre_indications: "Sa consommation doit être limitée car c'est un puissant vermifuge, souvent utilisé pour expulser les parasites intestinaux.",
     vignes: "L'aurone possède un port buissonnant très harmonieux et un feuillage semi-persistant finement découpé qui font d'elle une plante ornementale.",
-    image_url: '/images/plantes/aurone.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/aurone.png',
     audio_url: null,
   },
   {
@@ -103,7 +103,7 @@ const PLANTS = [
     vertus: "Il est cultivé en Afrique et en Inde pour en extraire des huiles essentielles. On peut consommer ses feuilles et ses fleurs en infusion ou comme condiments.",
     contre_indications: "Au jardin, il peut être utile pour repousser certains ravageurs indisposés par son parfum.",
     vignes: null,
-    image_url: '/images/plantes/basilic-kenya.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/basilic-kenya.png',
     audio_url: null,
   },
   {
@@ -117,7 +117,7 @@ const PLANTS = [
     vertus: "Connue depuis l'Antiquité pour ses vertus digestives, cette plante est communément utilisée en tisane. Elle évoque le thé noir par sa couleur ambrée et son astringence.",
     contre_indications: "C'est une plante rustique qui fait le bonheur des insectes pollinisateurs avec sa floraison abondante.",
     vignes: null,
-    image_url: '/images/plantes/calament.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/calament.png',
     audio_url: null,
   },
   {
@@ -131,8 +131,8 @@ const PLANTS = [
     vertus: "Elle est souvent utilisée en tisane pour soigner les troubles digestifs et calmer l'anxiété, mais possède bien d'autres vertus.",
     contre_indications: "Il arrive assez rarement qu'elle provoque des allergies. Mieux vaut éviter de la consommer en parallèle de certains médicaments.",
     vignes: "En viticulture biodynamique, c'est une précieuse alliée de la vigne qui l'aide à lutter contre le stress hydrique.",
-    image_url: '/images/plantes/camomille-matricaire.png',
-    audio_url: '/audios/plantes/camomille-matricaire.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/camomille-matricaire.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/camomille-matricaire.mp3',
   },
   {
     ordre: 10,
@@ -145,7 +145,7 @@ const PLANTS = [
     vertus: "La camomille romaine est utilisée en phytothérapie pour ses vertus sédatives, apaisantes, digestives, et anti-inflammatoires.",
     contre_indications: "Il arrive assez rarement qu'elle provoque des allergies. En théorie, elle est contre-indiquée en cas de grossesse.",
     vignes: "La camomille romaine peut servir de couvre-sol ornemental. Sa floraison peut être double, ce qui lui donne un aspect de pompon.",
-    image_url: '/images/plantes/camomille-romaine.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/camomille-romaine.png',
     audio_url: null,
   },
   {
@@ -159,7 +159,7 @@ const PLANTS = [
     vertus: "Les propriétés médicinales des feuilles et des baies de cassis sont évoquées pour la première fois au 12e siècle par Hildegarde de Bingen.",
     contre_indications: "Certains vins peuvent exprimer des arômes fruités de cassis ou même des notes végétales de feuille de cassis.",
     vignes: null,
-    image_url: '/images/plantes/cassissier.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/cassissier.png',
     audio_url: null,
   },
   {
@@ -173,8 +173,8 @@ const PLANTS = [
     vertus: "La consoude est riche en allantoïne, une substance qui favorise très efficacement la cicatrisation. Elle est également très minéralisante.",
     contre_indications: "La consoude, même si elle est comestible, peut nuire à la santé lorsqu'elle est consommée crue car elle contient des alcaloïdes.",
     vignes: "Cette plante sauvage qui peuple les milieux humides et riches est particulièrement appréciée des insectes pour son nectar. Précieuse alliée du jardin biodynamique.",
-    image_url: '/images/plantes/consoude.png',
-    audio_url: '/audios/plantes/consoude.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/consoude.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/consoude.mp3',
   },
   {
     ordre: 13,
@@ -187,7 +187,7 @@ const PLANTS = [
     vertus: "Tout est comestible chez cette plante utilisée comme légume ou comme condiment. Sa racine, ses feuilles, ses fleurs et ses graines aromatisent boissons, plats et desserts.",
     contre_indications: "Comme beaucoup de plantes médicinales, il peut avoir des effets indésirables lorsqu'il est consommé en trop grande quantité.",
     vignes: "Cette plante d'origine méditerranéenne supporte très bien la sécheresse grâce à sa grande racine pivotante.",
-    image_url: '/images/plantes/fenouil.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/fenouil.png',
     audio_url: null,
   },
   {
@@ -201,7 +201,7 @@ const PLANTS = [
     vertus: "On peut utiliser la feuille de framboisier en tisane car elle possède des propriétés astringentes, anti-inflammatoires et anti-oxydantes.",
     contre_indications: null,
     vignes: "Doté de racines traçantes, le framboisier se montre souvent envahissant. Il aime les sols riches en humus et frais.",
-    image_url: '/images/plantes/framboisier.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/framboisier.png',
     audio_url: null,
   },
   {
@@ -215,7 +215,7 @@ const PLANTS = [
     vertus: "Son usage remonte à l'Antiquité. Dans les monastères médiévaux, il servait à réguler l'activité hormonale. On lui reconnaît aussi des propriétés anti-inflammatoires.",
     contre_indications: "L'usage du gattilier est contre-indiqué en cas de troubles de l'hypophyse ou de cancer du sein.",
     vignes: "Cet arbuste méditerranéen s'adapte aux sols pauvres, drainants et secs. Très mellifères, ses fleurs sont beaucoup visitées par les abeilles.",
-    image_url: '/images/plantes/gattilier.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/gattilier.png',
     audio_url: null,
   },
   {
@@ -243,7 +243,7 @@ const PLANTS = [
     vertus: "Riches en polyphénols et en propriétés anti-oxydantes, les cônes de houblons servent traditionnellement de conservateurs dans la bière.",
     contre_indications: "Il arrive que cette plante provoque des irritations ou allergies sur la peau. Les cônes du houblon sont toxiques pour les chiens.",
     vignes: "Cette plante grimpante vit de préférence dans les ripisylves, c'est-à-dire les boisements en bord de cours d'eau.",
-    image_url: '/images/plantes/houblon.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/houblon.png',
     audio_url: null,
   },
   {
@@ -257,7 +257,7 @@ const PLANTS = [
     vertus: "Sous forme de tisane ou consommée comme condiment, cette plante médicinale est antiseptique, stimulante, stomachique et expectorante.",
     contre_indications: "L'usage d'huile essentielle d'hysope officinale est réglementé car dangereux en raison de ses propriétés épileptisantes.",
     vignes: "Cette plante aromatique se montre très décorative avec sa floraison bleu intense qui attire les pollinisateurs.",
-    image_url: '/images/plantes/hysope.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/hysope.png',
     audio_url: null,
   },
   {
@@ -271,7 +271,7 @@ const PLANTS = [
     vertus: "L'usage condimentaire de cette plante est aujourd'hui passé de mode. En revanche, les huiles essentielles d'immortelle d'Italie sont toujours très utilisées en aromathérapie.",
     contre_indications: "Il est déconseillé d'utiliser son huile essentielle par voie orale.",
     vignes: "Cette plante emblématique du littoral méditerranéen est protégée en Provence-Alpes-Côte d'Azur.",
-    image_url: '/images/plantes/immortelle-italie.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/immortelle-italie.png',
     audio_url: null,
   },
   {
@@ -285,7 +285,7 @@ const PLANTS = [
     vertus: "Les fleurs sont comestibles et s'emploient pour parfumer des confitures ou des tisanes. L'eau de lavande, utilisée dans le bain, permet de se calmer et de purifier la peau.",
     contre_indications: null,
     vignes: "Lorsqu'il fait très chaud, la lavande transpire et lors de cette évaporation contrôlée, elle diffuse des micro-gouttes d'huiles essentielles.",
-    image_url: '/images/plantes/lavande.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/lavande.png',
     audio_url: null,
   },
   {
@@ -299,7 +299,7 @@ const PLANTS = [
     vertus: "Ce légume oublié, recommandé autrefois par le Capitulaire de Villis sous Charlemagne, est une richesse pour qui sait l'utiliser !",
     contre_indications: "Cette plante étant très diurétique, il faut éviter de la consommer en cas de problèmes rénaux.",
     vignes: "Cette plante apprécie les sols riches et humides. Un bon paillage au pied lui convient bien.",
-    image_url: '/images/plantes/liveche.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/liveche.png',
     audio_url: null,
   },
   {
@@ -341,7 +341,7 @@ const PLANTS = [
     vertus: "Parmi toutes les espèces de menthes, c'est l'espèce qui contient la plus forte concentration en menthol, ce qui fait d'elle un produit phare en cuisine comme en phytothérapie.",
     contre_indications: "L'usage thérapeutique de la menthe poivrée est contre-indiqué pendant le premier trimestre de la grossesse.",
     vignes: "Comme chez toutes les menthes, ses fleurs riches en nectar font le bonheur des papillons.",
-    image_url: '/images/plantes/menthe-poivree.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/menthe-poivree.png',
     audio_url: null,
   },
   {
@@ -355,7 +355,7 @@ const PLANTS = [
     vertus: "Elle est souvent utilisée en infusion pour sa saveur agréable mais aussi pour ses propriétés antibactériennes, notamment afin de traiter les infections buccales ou de la gorge.",
     contre_indications: null,
     vignes: null,
-    image_url: '/images/plantes/monarde.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/monarde.png',
     audio_url: null,
   },
   {
@@ -369,7 +369,7 @@ const PLANTS = [
     vertus: "Si son usage est fréquent au Moyen-Orient, cet aromate est quasi inconnu en France. Il peut servir de condiment ou d'épice.",
     contre_indications: "Comme tous les origans et d'autres lamiacées, il contient du linalol, un composé qui peut être allergisant.",
     vignes: "Cette plante déploie une floraison blanche qui plaît beaucoup aux insectes pollinisateurs.",
-    image_url: '/images/plantes/origan-syrie.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/origan-syrie.png',
     audio_url: null,
   },
   {
@@ -383,8 +383,8 @@ const PLANTS = [
     vertus: "Très riche en minéraux et en vitamines, l'ortie est un trésor de bienfaits pour notre santé. En voie interne, elle est diurétique et reminéralisante.",
     contre_indications: "Il ne faut pas la consommer en cas de troubles du cœur ou des reins.",
     vignes: "En agriculture biologique et biodynamique, l'ortie est couramment utilisée en tisane pour réguler la croissance, stimuler les échanges et protéger les plantes.",
-    image_url: '/images/plantes/ortie.png',
-    audio_url: '/audios/plantes/ortie.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/ortie.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/ortie.mp3',
   },
   {
     ordre: 28,
@@ -411,7 +411,7 @@ const PLANTS = [
     vertus: "Crues ou cuites, les feuilles et les fleurs peuvent aromatiser vinaigres, sauces, crudités, riz et plats de viande ou de poisson.",
     contre_indications: null,
     vignes: "Plus on l'effeuille, plus son port est buissonnant. Elle présente l'avantage de se ressemer toute seule au jardin.",
-    image_url: '/images/plantes/perilla-pourpre.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/perilla-pourpre.png',
     audio_url: null,
   },
   {
@@ -425,8 +425,8 @@ const PLANTS = [
     vertus: "Si son nom ancien de Dent-de-lion évoque la forme très dentée de ses feuilles, son nom de pissenlit souligne de façon équivoque ses vertus diurétiques.",
     contre_indications: null,
     vignes: "Le pissenlit officinal sert à soigner la vigne de façon naturelle ; c'est l'une des plantes les plus utilisées en biodynamie.",
-    image_url: '/images/plantes/pissenlit.png',
-    audio_url: '/audios/plantes/pissenlit.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/pissenlit.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/pissenlit.mp3',
   },
   {
     ordre: 31,
@@ -439,7 +439,7 @@ const PLANTS = [
     vertus: "On la consomme de préférence crue ou bien conservée en saumure ou au vinaigre. Elle est excellente sur une simple tartine de beurre !",
     contre_indications: "Comme toutes les plantes de la famille des Boraginacées, elle contient des alcaloïdes nuisibles pour la santé en grande quantité.",
     vignes: "Elle forme de jolis tapis végétaux aux fleurs bleues. Capable de supporter des conditions très difficiles.",
-    image_url: '/images/plantes/mertensie.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/mertensie.png',
     audio_url: null,
   },
   {
@@ -453,7 +453,7 @@ const PLANTS = [
     vertus: "En Asie, que ce soit au Japon, à Taiwan, en Corée ou en Chine, on utilise la feuille fraîche ou séchée comme condiment et la baie comme épice.",
     contre_indications: "Cet arbuste se montre bien rustique et ne nécessite aucune protection hivernale, chose rare pour un agrume !",
     vignes: null,
-    image_url: '/images/plantes/poivrier-sichuan.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/poivrier-sichuan.png',
     audio_url: null,
   },
   {
@@ -467,8 +467,8 @@ const PLANTS = [
     vertus: "C'est une plante médicinale appréciée pour sa haute teneur en silice mais aussi en calcium et potassium. Minéralisante et revitalisante.",
     contre_indications: null,
     vignes: "Très employée par les jardiniers pour les traitements naturels, au même titre que la consoude et l'ortie, elle sert aussi beaucoup en viticulture biodynamique.",
-    image_url: '/images/plantes/prele.png',
-    audio_url: '/audios/plantes/prele.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/prele.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/prele.mp3',
   },
   {
     ordre: 34,
@@ -481,7 +481,7 @@ const PLANTS = [
     vertus: "Seule la racine est exploitable en cuisine, sous forme séchée, fraîche ou transformée en sirop. Elle permet d'aromatiser boissons, sauces et desserts.",
     contre_indications: "Il faut la consommer avec précaution, surtout chez les personnes qui souffrent d'hypertension.",
     vignes: "Elle appartient à la grande famille des Fabacées qui comprend notamment les haricots, lentilles, petits pois, trèfles et glycines.",
-    image_url: '/images/plantes/reglisse.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/reglisse.png',
     audio_url: null,
   },
   {
@@ -495,8 +495,8 @@ const PLANTS = [
     vertus: "Riche en acide salicylique, elle possède des propriétés antalgiques, anti-inflammatoires, antipyrétiques et antispasmodiques.",
     contre_indications: "Son usage doit être modéré voire restreint dans certains cas médicaux.",
     vignes: "En viticulture biodynamique, elle est utilisée sous forme de tisane ou décoction pour réguler les maladies cryptogamiques.",
-    image_url: '/images/plantes/reine-des-pres.png',
-    audio_url: '/audios/plantes/reine-des-pres.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/reine-des-pres.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/reine-des-pres.mp3',
   },
   {
     ordre: 36,
@@ -509,8 +509,8 @@ const PLANTS = [
     vertus: "Riche en acide oxalique, c'est une plante diurétique dont on limite la consommation pour éviter de fatiguer les reins.",
     contre_indications: "Son usage doit être modéré voire restreint dans certains cas médicaux comme les problèmes rénaux.",
     vignes: "Son usage en agriculture biodynamique est souvent ignoré. Pourtant, c'est une plante précieuse pour repousser certains insectes indésirables.",
-    image_url: '/images/plantes/rhubarbe.png',
-    audio_url: '/audios/plantes/rhubarbe.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/rhubarbe.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/rhubarbe.mp3',
   },
   {
     ordre: 37,
@@ -523,8 +523,8 @@ const PLANTS = [
     vertus: "Souvent utilisée en cuisine pour relever les plats de viande en sauce, elle fait aussi de bons vins macérés. En phytothérapie, elle soulage les douleurs.",
     contre_indications: "Elle est déconseillée chez l'enfant et la femme enceinte. On doit limiter sa consommation.",
     vignes: "Comme beaucoup de plantes de la famille des Lamiacées, la sauge officinale est très mellifère et produit une abondante floraison.",
-    image_url: '/images/plantes/sauge.png',
-    audio_url: '/audios/plantes/sauge.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/sauge.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/sauge.mp3',
   },
   {
     ordre: 38,
@@ -537,8 +537,8 @@ const PLANTS = [
     vertus: "L'écorce de saule blanc est la plante à l'origine de la découverte de l'aspirine. Elle est utilisée pour lutter contre la fièvre, les douleurs et les inflammations.",
     contre_indications: "Comme il fluidifie le sang, il est contre-indiqué en cas de prise d'anti-coagulants.",
     vignes: "Il est souvent conduit en « têtard » pour faciliter la récolte. Ses brins d'osier servent à palisser la vigne. On en tire de l'hormone de bouturage.",
-    image_url: '/images/plantes/saule-blanc.png',
-    audio_url: '/audios/plantes/saule-blanc.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/saule-blanc.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/saule-blanc.mp3',
   },
   {
     ordre: 39,
@@ -551,8 +551,8 @@ const PLANTS = [
     vertus: "On peut utiliser cette plante aromatique comme épice en cuisine mais avec précaution. Riche en principes amers, il vaut mieux extraire ses parfums par macération pour aromatiser boissons et desserts.",
     contre_indications: "La prudence est de mise car elle est abortive et vermifuge.",
     vignes: "Cette plante est un insecticide puissant. Sa propriété insecticide peut être mise à profit au jardin pour éloigner les ravageurs.",
-    image_url: '/images/plantes/tanaisie.png',
-    audio_url: '/audios/plantes/tanaisie.mp3',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/tanaisie.png',
+    audio_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/plantes/tanaisie.mp3',
   },
   {
     ordre: 40,
@@ -565,7 +565,7 @@ const PLANTS = [
     vertus: "C'est une grande plante médicinale surtout connue pour ses propriétés sédatives et anxiolytiques. Si elle calme l'Homme, elle joue au contraire un rôle euphorisant pour les chats.",
     contre_indications: null,
     vignes: "Au vignoble, elle se montre très utile car elle permet de fabriquer des préparations biodynamiques pour protéger la vigne du gel ou l'aider à cicatriser.",
-    image_url: '/images/plantes/valeriane.png',
+    image_url: 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/plantes/valeriane.png',
     audio_url: null,
   },
 ];

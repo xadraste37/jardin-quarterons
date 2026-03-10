@@ -11,6 +11,8 @@ type Ch3State =
   | { screen: 'intro' }
   | { screen: 'branch-a'; step: BranchAStep };
 
+const BASE = 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media';
+
 function Quiz({
   question,
   options,
@@ -111,7 +113,7 @@ export default function Chapitre3() {
       {state.screen === 'branch-a' && state.step === 'jeff' && (
         <div className="flex flex-col items-center text-center gap-6">
           <div className="relative w-40 h-40 rounded-full overflow-hidden shadow-md">
-            <Image src="/images/portraits/jeff.jpg" alt="Jeff" fill className="object-cover" />
+            <Image src={`${BASE}/images/portraits/jeff.jpg`} alt="Jeff" fill className="object-cover" />
           </div>
           <h2 className="text-xl font-extrabold text-brand-blue">Jeff</h2>
           <p className="text-brand-blue/70 leading-relaxed">
@@ -121,7 +123,7 @@ export default function Chapitre3() {
           <PlayButton
             size="lg"
             label="Écouter Jeff"
-            audioUrl="/audios/jeff-achillee.mp3"
+            audioUrl={`${BASE}/audios/jeff-achillee.mp3`}
           />
           <button className="btn-gold w-full mt-auto" onClick={() => goStep('quiz-jeff')}>
             Répondre à la question
@@ -147,7 +149,7 @@ export default function Chapitre3() {
       {state.screen === 'branch-a' && state.step === 'michel' && (
         <div className="flex flex-col items-center text-center gap-6">
           <div className="relative w-40 h-40 rounded-full overflow-hidden shadow-md">
-            <Image src="/images/portraits/michel.jpg" alt="Michel" fill className="object-cover" />
+            <Image src={`${BASE}/images/portraits/michel.jpg`} alt="Michel" fill className="object-cover" />
           </div>
           <h2 className="text-xl font-extrabold text-brand-blue">Michel</h2>
           <p className="text-brand-blue/70 leading-relaxed">
@@ -157,7 +159,7 @@ export default function Chapitre3() {
           <PlayButton
             size="lg"
             label="Écouter Michel"
-            audioUrl="/audios/michel-valeriane.mp3"
+            audioUrl={`${BASE}/audios/michel-valeriane.mp3`}
           />
           <button className="btn-gold w-full mt-auto" onClick={() => goStep('quiz-val-q1')}>
             Répondre aux 2 questions !

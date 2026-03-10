@@ -11,7 +11,7 @@ export default function IntroPage() {
       {/* Hero image — fixed height, never expands */}
       <div className="relative w-full rounded-2xl overflow-hidden shrink-0" style={{ height: '220px' }}>
         <Image
-          src="/images/lieux/intro-jardin2.png"
+          src="https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/lieux/intro-jardin2.png"
           alt="Jardin des Quarterons"
           fill
           className="object-contain"

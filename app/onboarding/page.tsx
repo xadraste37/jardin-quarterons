@@ -42,7 +42,7 @@ export default function OnboardingPage() {
         </div>
         <div className="relative w-72 h-72 rounded-full overflow-hidden mb-8 shadow-lg">
           <Image
-            src="/images/lieux/onboarding-success.png"
+            src="https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/lieux/onboarding-success.png"
             alt="Parcours prêt"
             fill
             className="object-cover"
@@ -66,7 +66,7 @@ export default function OnboardingPage() {
 
       <div className="relative w-48 h-48 rounded-full overflow-hidden mx-auto mb-6 shadow-lg">
         <Image
-          src="/images/portraits/onboarding.png"
+          src="https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/portraits/onboarding.png"
           alt="Bienvenue"
           fill
           className="object-cover"
@@ -84,7 +84,7 @@ export default function OnboardingPage() {
       <div className="flex flex-col items-center gap-3 mb-auto">
         <PlayButton
           size="lg"
-          audioUrl="/audios/bienvenue-ch1.m4a"
+          audioUrl="https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/bienvenue-ch1.m4a"
         />
         <p className="text-brand-blue font-semibold text-sm">
           Ecoutez le message de bienvenue.

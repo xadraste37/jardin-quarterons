@@ -12,6 +12,8 @@ const Viewer360 = dynamic(() => import('@/components/Viewer360'), { ssr: false }
 
 type Screen = 1|2|3|4|5|6|7|8|9|10|11|12;
 
+const BASE = 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media';
+
 const DROP_ZONES: DropZone[] = [
   { id: 'zone-graviers', x_pct: 72, y_pct: 80, label: 'Zone graviers (bord Loire)' },
   { id: 'zone-calcaire', x_pct: 68, y_pct: 30, label: 'Zone calcaire (côteaux)' },
@@ -42,7 +44,7 @@ export default function Chapitre4() {
   if (screen === 11) {
     return (
       <Viewer360
-        imageUrl="/images/360/chai-360.jpg"
+        imageUrl={`${BASE}/images/360/chai-360.jpg`}
         onExit={() => go(12)}
       />
     );
@@ -63,7 +65,7 @@ export default function Chapitre4() {
           </p>
           <div className="relative w-full rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: '4/3' }}>
             <Image
-              src="/images/lieux/gout-endroit.jpg"
+              src={`${BASE}/images/lieux/gout-endroit.jpg`}
               alt="Le goût de l'endroit"
               fill
               className="object-cover"
@@ -83,7 +85,7 @@ export default function Chapitre4() {
           <h1 className="text-2xl font-extrabold text-brand-blue">Entre Loire et côteaux</h1>
           <div className="relative w-full rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: '4/3' }}>
             <Image
-              src="/images/lieux/carte-terroirs.jpg"
+              src={`${BASE}/images/lieux/carte-terroirs.jpg`}
               alt="Carte des terroirs entre Loire et côteaux"
               fill
               className="object-cover"
@@ -115,7 +117,7 @@ export default function Chapitre4() {
             className="relative w-44 h-44 rounded-full overflow-hidden border-4 border-brand-gold hover:opacity-90 transition-opacity shadow-md"
           >
             <Image
-              src="/images/lieux/terroir-gravier.png"
+              src={`${BASE}/images/lieux/terroir-gravier.png`}
               alt="Terroir graviers"
               fill
               className="object-cover"
@@ -131,7 +133,7 @@ export default function Chapitre4() {
                   <button onClick={() => setSoilDetailOpen(null)} className="w-8 h-8 rounded-full bg-brand-gold text-white flex items-center justify-center font-bold">✕</button>
                 </div>
                 <div className="relative w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 shadow-md">
-                  <Image src="/images/lieux/terroir-gravier.png" alt="Graviers siliceux" fill className="object-cover" />
+                  <Image src={`${BASE}/images/lieux/terroir-gravier.png`} alt="Graviers siliceux" fill className="object-cover" />
                 </div>
                 <p className="text-brand-blue/70 text-sm leading-relaxed">
                   Sols de <strong>graviers siliceux</strong> en bord de Loire. Ces terres légères
@@ -152,9 +154,9 @@ export default function Chapitre4() {
           </h1>
           <DragDropMap
             instruction="Glisse l'échantillon de graviers sur la zone correspondante de la carte"
-            mapSrc="/images/lieux/carte-terroirs.jpg"
+            mapSrc={`${BASE}/images/lieux/carte-terroirs.jpg`}
             dropZones={DROP_ZONES}
-            sampleSrc="/images/lieux/terroir-gravier.png"
+            sampleSrc={`${BASE}/images/lieux/terroir-gravier.png`}
             sampleLabel="Graviers"
             correctZoneId="zone-graviers"
             onCorrect={() => go(5)}
@@ -196,7 +198,7 @@ export default function Chapitre4() {
             className="relative w-44 h-44 rounded-full overflow-hidden border-4 border-brand-gold hover:opacity-90 transition-opacity shadow-md"
           >
             <Image
-              src="/images/lieux/terroir-calcaire.png"
+              src={`${BASE}/images/lieux/terroir-calcaire.png`}
               alt="Terroir calcaire"
               fill
               className="object-cover"
@@ -212,7 +214,7 @@ export default function Chapitre4() {
                   <button onClick={() => setSoilDetailOpen(null)} className="w-8 h-8 rounded-full bg-brand-gold text-white flex items-center justify-center font-bold">✕</button>
                 </div>
                 <div className="relative w-28 h-28 rounded-full overflow-hidden mx-auto mb-4 shadow-md">
-                  <Image src="/images/lieux/terroir-calcaire.png" alt="Calcaire turonien" fill className="object-cover" />
+                  <Image src={`${BASE}/images/lieux/terroir-calcaire.png`} alt="Calcaire turonien" fill className="object-cover" />
                 </div>
                 <p className="text-brand-blue/70 text-sm leading-relaxed">
                   Sols <strong>argilo-calcaires</strong> sur les côteaux. Ces terres retiennent
@@ -233,9 +235,9 @@ export default function Chapitre4() {
           </h1>
           <DragDropMap
             instruction="Glisse l'échantillon de calcaire sur la zone correspondante de la carte"
-            mapSrc="/images/lieux/carte-terroirs.jpg"
+            mapSrc={`${BASE}/images/lieux/carte-terroirs.jpg`}
             dropZones={DROP_ZONES}
-            sampleSrc="/images/lieux/terroir-calcaire.png"
+            sampleSrc={`${BASE}/images/lieux/terroir-calcaire.png`}
             sampleLabel="Calcaire"
             correctZoneId="zone-calcaire"
             onCorrect={() => go(8)}
@@ -265,7 +267,7 @@ export default function Chapitre4() {
           <h1 className="text-2xl font-extrabold text-brand-blue">La dégustation</h1>
           <div className="relative w-40 h-40 rounded-full overflow-hidden shadow-md">
             <Image
-              src="/images/portraits/onboarding.png"
+              src={`${BASE}/images/portraits/onboarding.png`}
               alt="La dégustation"
               fill
               className="object-cover"
@@ -288,7 +290,7 @@ export default function Chapitre4() {
           <div className="flex flex-col items-center gap-6 text-center flex-1">
             <div className="relative w-44 h-44 rounded-full overflow-hidden shadow-md">
               <Image
-                src="/images/lieux/porte-du-chai.png"
+                src={`${BASE}/images/lieux/porte-du-chai.png`}
                 alt="Porte du chai"
                 fill
                 className="object-cover"
@@ -316,7 +318,7 @@ export default function Chapitre4() {
           {/* Team photo in landscape format */}
           <div className="relative w-full rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: '4/3' }}>
             <Image
-              src="/images/portraits/equipe-conclusion.jpg"
+              src={`${BASE}/images/portraits/equipe-conclusion.jpg`}
               alt="L'équipe du Clos des Quarterons"
               fill
               className="object-cover"
@@ -325,7 +327,7 @@ export default function Chapitre4() {
           <div className="flex flex-col items-center gap-2">
             <PlayButton
               size="lg"
-              audioUrl="/audios/conclusion-au-revoir.m4a"
+              audioUrl={`${BASE}/audios/conclusion-au-revoir.m4a`}
             />
           </div>
           <blockquote className="text-brand-blue italic text-base leading-relaxed border-l-4 border-brand-gold pl-4 text-left">

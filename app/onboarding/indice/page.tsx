@@ -23,7 +23,7 @@ export default function IndicePage() {
         <div className="relative">
           <div className="relative w-56 h-56 rounded-full overflow-hidden shadow-xl">
             <Image
-              src="/images/portraits/ana-maitre-de-chai.png"
+              src="https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/portraits/ana-maitre-de-chai.png"
               alt="Ana, maître de chai"
               fill
               className="object-cover"
@@ -33,7 +33,7 @@ export default function IndicePage() {
           <div className="absolute -bottom-7 left-1/2 -translate-x-1/2">
             <PlayButton
               size="lg"
-              audioUrl="/audios/indice-ana-amphore.m4a"
+              audioUrl="https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/audios/indice-ana-amphore.m4a"
             />
           </div>
         </div>

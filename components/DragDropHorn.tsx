@@ -15,11 +15,13 @@ const BOUSES = [
   { id: 'bouse-3', label: 'Bouse 3' },
 ];
 
+const BASE = 'https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media';
+
 const HORN_IMAGES: Record<number, string> = {
-  0: '/images/jeu/corne-vide.png',
-  1: '/images/jeu/corne-1-3.png',
-  2: '/images/jeu/corne-2-3.png',
-  3: '/images/jeu/corne-3-3.png',
+  0: `${BASE}/images/jeu/corne-vide.png`,
+  1: `${BASE}/images/jeu/corne-1-3.png`,
+  2: `${BASE}/images/jeu/corne-2-3.png`,
+  3: `${BASE}/images/jeu/corne-3-3.png`,
 };
 
 function DraggableBouse({ id, label, dropped }: { id: string; label: string; dropped: boolean }) {
@@ -44,7 +46,7 @@ function DraggableBouse({ id, label, dropped }: { id: string; label: string; dro
       aria-label={label}
     >
       <Image
-        src="/images/jeu/bouse.jpg"
+        src={`${BASE}/images/jeu/bouse.jpg`}
         alt="Bouse de vache"
         width={80}
         height={80}

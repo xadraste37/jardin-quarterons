@@ -20,7 +20,7 @@ export default function CollectePage() {
           </h1>
           <div className="relative w-56 h-56 rounded-full overflow-hidden shadow-lg">
             <Image
-              src="/images/lieux/intro-jardin.png"
+              src="https://blkzckjwlpuxqckduypi.supabase.co/storage/v1/object/public/quarterons-media/images/lieux/intro-jardin.png"
               alt="Jardin des Arômes"
               fill
               className="object-cover"

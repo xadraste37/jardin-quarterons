@@ -18,7 +18,9 @@
       "Bash(gh repo:*)",
       "Bash(where gh:*)",
       "Read(//c/Program Files/**)",
-      "Read(//c/Users/Utilisateur/AppData/Local/Programs/**)"
+      "Read(//c/Users/Utilisateur/AppData/Local/Programs/**)",
+      "Bash(cd \"/c/Users/Utilisateur/Documents/4. SANDBOX/jardin-quarterons\" && node -e \"require\\('mime-types'\\)\" 2>&1 | head -2)",
+      "Bash(cd \"/c/Users/Utilisateur/Documents/4. SANDBOX/jardin-quarterons\" && grep -c \"blkzckjwlpuxqckduypi\" scripts/seed-guide-plantes.mjs && grep \"'/images/plantes/\" scripts/seed-guide-plantes.mjs | head -3 && grep \"image_url: 'https\" scripts/seed-guide-plantes.mjs | head -3)"
     ]
   }
 }
