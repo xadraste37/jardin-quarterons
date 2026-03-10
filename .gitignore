@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# media assets (tracked locally, not in git)
+/public/images/
+/public/audios/
+/public/fonts/
+/quarterons-content/
