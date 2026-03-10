@@ -36,7 +36,12 @@ yarn-error.log*
 next-env.d.ts
 
 # media assets (tracked locally, not in git)
-/public/images/
+# note: icone/ and logos/ are intentionally tracked (small static UI assets)
+/public/images/lieux/
+/public/images/portraits/
+/public/images/plantes/
+/public/images/jeu/
+/public/images/360/
 /public/audios/
 /public/fonts/
 /quarterons-content/
