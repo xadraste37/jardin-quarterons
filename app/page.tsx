@@ -20,14 +20,14 @@ export default function IntroPage() {
       </div>
 
       {/* Text block */}
-      <div className="flex flex-col text-center gap-2 shrink-0">
+      <div className="flex flex-col text-center shrink-0">
         <h1 className="text-2xl font-extrabold text-brand-blue leading-tight">
-          &ldquo;De la Terre au Ciel&rdquo; au Clos des Quarterons
+          &ldquo;De la Terre au Ciel&rdquo;<br />au Clos des Quarterons
         </h1>
-        <p className="text-brand-gold font-semibold text-base">
+        <p className="text-brand-gold font-semibold text-base mt-4">
           Le Jardin des Arômes, lieu d&apos;éveil et de partage
         </p>
-        <p className="text-brand-blue text-sm leading-relaxed mx-auto max-w-sm">
+        <p className="text-brand-blue text-sm leading-relaxed mx-auto max-w-sm mt-3">
           Désireux d&apos;offrir à nos clients une expérience de visite inédite et de partager
           notre vision de la nature, nous avons conçu un jardin pédagogique, porteur de sens.
           <br />
@@ -36,8 +36,8 @@ export default function IntroPage() {
         </p>
       </div>
 
-      {/* Spacer */}
-      <div className="flex-1" />
+      {/* Spacer — reduced to move CTA higher */}
+      <div className="h-4" />
 
       {/* CTA pinned above bottom */}
       <button

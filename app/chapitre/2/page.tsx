@@ -192,6 +192,10 @@ export default function Chapitre2() {
             {defi.type === 'riddle' && (
               <h1 className="text-2xl font-extrabold text-brand-blue">Qui suis-je ?</h1>
             )}
+            <div className="h-1 w-16 bg-brand-gold rounded-full" />
+            <p className="text-lg text-brand-blue leading-relaxed">
+              {defi.clue}
+            </p>
             <div className="flex flex-wrap gap-3 justify-center">
               {defi.photos.map((p, i) => (
                 <div key={i} className="relative w-20 h-20 rounded-full overflow-hidden bg-brand-blue/5 shrink-0 shadow-sm">
@@ -203,10 +207,6 @@ export default function Chapitre2() {
                 </div>
               ))}
             </div>
-            <div className="h-1 w-16 bg-brand-gold rounded-full" />
-            <p className="text-lg text-brand-blue leading-relaxed">
-              {defi.clue}
-            </p>
           </div>
           {/* CTAs pushed to bottom */}
           <div className="flex flex-col gap-3 mt-auto pt-6">

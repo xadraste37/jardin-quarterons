@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import AudioManager from '@/components/AudioManager';
 
 export const metadata: Metadata = {
   title: 'Jardin des Quarterons',
@@ -32,6 +33,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className="font-sans min-h-screen bg-white text-brand-blue">
+        <AudioManager />
         <div className="max-w-md mx-auto min-h-screen relative">
           {children}
         </div>
