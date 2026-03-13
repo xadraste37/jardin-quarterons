@@ -91,7 +91,7 @@ export default function Chapitre1() {
             Ecoutez Jeff expliquer comment nous appliquons la préparation T500 au domaine.
           </p>
           <div className="flex items-center justify-center gap-5">
-            <div className="relative w-16 h-16 rounded-full overflow-hidden shadow-md shrink-0">
+            <div className="relative w-24 h-24 rounded-full overflow-hidden shadow-md shrink-0">
               <Image src={`${BASE}/images/portraits/jeff.jpg`} alt="Jeff" fill className="object-cover" />
             </div>
             <PlayButton

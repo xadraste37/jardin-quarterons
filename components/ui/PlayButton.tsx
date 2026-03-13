@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
+import { registerAudio, unregisterAudio } from '@/lib/audioRegistry';
 
 interface PlayButtonProps {
   audioUrl?: string;
@@ -19,10 +20,21 @@ export default function PlayButton({ audioUrl, size = 'md', label }: PlayButtonP
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+        unregisterAudio(audioRef.current);
+      }
+    };
+  }, []);
+
   const handleToggle = () => {
     if (!audioUrl) return;
     if (!audioRef.current) {
       audioRef.current = new Audio(audioUrl);
+      registerAudio(audioRef.current);
       audioRef.current.onended = () => setPlaying(false);
     }
     if (playing) {

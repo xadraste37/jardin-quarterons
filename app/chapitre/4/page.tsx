@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import BackButton from '@/components/ui/BackButton';
 import PlayButton from '@/components/ui/PlayButton';
 import DragDropMap, { DropZone } from '@/components/DragDropMap';
@@ -21,7 +21,9 @@ const DROP_ZONES: DropZone[] = [
 
 export default function Chapitre4() {
   const router = useRouter();
-  const [screen, setScreen] = useState<Screen>(1);
+  const searchParams = useSearchParams();
+  const initialScreen = (Number(searchParams.get('screen')) || 1) as Screen;
+  const [screen, setScreen] = useState<Screen>(initialScreen);
   const [soilDetailOpen, setSoilDetailOpen] = useState<'graviers' | 'calcaire' | null>(null);
 
   const go = (s: Screen) => setScreen(s);

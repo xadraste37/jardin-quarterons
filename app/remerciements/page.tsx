@@ -9,7 +9,7 @@ export default function RemerciementsPage() {
   return (
     <div className="flex flex-col min-h-screen px-6 py-8">
       <div className="mb-6">
-        <BackButton onClick={() => router.push('/chapitre/4')} />
+        <BackButton onClick={() => router.push('/chapitre/4?screen=12')} />
       </div>
 
       <h1 className="text-2xl font-extrabold text-brand-blue text-center mb-6">

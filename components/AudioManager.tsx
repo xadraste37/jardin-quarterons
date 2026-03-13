@@ -2,12 +2,13 @@
 
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { stopAllAudio } from '@/lib/audioRegistry';
 
 export default function AudioManager() {
   const pathname = usePathname();
 
   useEffect(() => {
-    document.querySelectorAll('audio').forEach(a => a.pause());
+    stopAllAudio();
   }, [pathname]);
 
   return null;
